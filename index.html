@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav class="nav">
+      <ul id="navbar">
+       </ul>
+    </nav>
+  </header>
+ <main>
+     <section id="head" data-nav="Home">
+        <div class="landing__container" id="head">
+          <h1>Charlotte's Delight</h1>
+        </div>
+     </section>
+    
+    <section id="one" data-nav="About">
+      <div class="landing__container">
+        <h2>About</h2>
+          <div class="about-cha">
+            <img src="Images/img14.png" style="width: 50%;"/>
+          </div>
+          <p>Hi, my name is Charlotte and I've always been passionate about cooking, so I decided to create this blog to share recipes. With time, I developed a passion for culinary styling that made me want to share it with you.</p>
+      </div>
+    </section>
+    <section id="two" data-nav="Recipes">
+      <div class="landing__container">
+        <h2>Recipes</h2>
+          <div class="card1">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Images/img3.jpeg" alt="soup">
+                </div>
+                <div class="flip-card-back">
+                    <a href=#><h3>Pumpkin soup</h3></a>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+          </div>
+          </div>
+           <div class="card2">
+           <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Images/img4.jpeg" alt="soup">
+                </div>
+                <div class="flip-card-back">
+                    <a href=#><h3>Risotto</h3></a>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="card3">
+           <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Images/img6.jpeg" alt="soup">
+                </div>
+                <div class="flip-card-back">
+                    <a href=#><h3>Avocado toast</h3></a>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="three" data-nav="Foodstylism">
+      <div class="landing__container">
+        <h2>Foodstylism</h2>
+          <div class="container">
+                  <div class="box" id="one">
+                    <img src="Images/img7.jpg" alt="toast"/>
+                  </div>
+                  <div class="box" id="two">
+                    <img src="Images/img8.jpg" alt="soup"/>
+                  </div>
+                  <div class="box" id="three">
+                    <img src="Images/img13.jpg" alt="risotto"/>
+                  </div>
+                  <div class="box" id="four">
+                    <img src="Images/img10.jpg" alt="toast"/>
+                  </div>
+                  <div class="box" id="five">
+                    <img src="Images/img11.jpeg" alt="soup"/>
+                  </div>
+                  <div class="box" id="six">
+                    <img src="Images/img12.jpg" alt="risotto"/>
+                  </div>
+           </div>
+        </div>
+    </section>
+        <section id="foure" data-nav="Contact">
+            <div class="landing__container">
+                <h2>Contact</h2>
+                    <div class="contact-form">
+                        <form action="action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="australia">Belgium</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="england">England</option>
+                                    <option value="germany">Germany</option>
+                                </select>
+                            <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+            </div>
+        </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Charlotte Van Damme</p>
+  </footer>
+ <script src="js/app.js"></script>
+</body>
+</html>
